@@ -23,10 +23,35 @@ This project predicts the **Customer Lifetime Value (CLV)** of customers based o
 | `rfm_2009_ready.xlsx` | Cleaned RFM data for Tableau |
 
 ---
+ Tableau Dashboard:
+Explore the interactive dashboard:
+🔗 View on Tableau Public
 
+🎯 Model Summary:
+
+Model Used: Random Forest Regressor
+Features: Recency, Frequency
+Target: Monetary Value (CLV)
+
+Performance:
+MSE: ~155,772
+R² Score: ~0.576
+
+📚 Dataset:
+Source: Kaggle – Online Retail II Dataset
+Files used: online_retail_2009.xlsx, online_retail_2010.xlsx
+---
 ## 🚀 Run the App Locally
 
 ### 📦 Step 1: Clone the Repo
 ```bash
 git clone https://github.com/sudeshnapendyala09/CLV-Project.git
 cd CLV-Project
+
+📦 Step 2: Install Dependencies
+bash
+pip install -r requirements.txt
+
+🚀 Step 3: Run Streamlit App
+bash
+streamlit run app.py
